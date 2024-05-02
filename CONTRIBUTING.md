@@ -17,4 +17,4 @@ At present, we only welcome pull requests to correct bugs and inconsistencies. B
 
 ## :star: License
 By contributing to Granite Code Models, you agree that your contributions will be
-licensed under [Apache 2.0](https://).
+licensed under [Apache 2.0](./LICENSE).
