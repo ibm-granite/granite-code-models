@@ -41,7 +41,7 @@ Our findings reveal that Granite Code models outperform strong open-source model
 <img src="./figures/GraniteCodeFigure1.png" />
 
 ## How to Download our Models?
-You can download our models from HuggingFace. First, please visit the model repository of your preference, for example, `ibm-granite/granite-3b-code-base`. To download the model (i.e., `granite-3b-code-base`), click on *Files and versions* tab and download the content of the `main` branch. You can also download our models via the command line by installing `huggingface-hub` library. Another option is to clone a model's respective HuggingFace repository (i.e., `git clone git@hf.co:ibm-granite/granite-3b-code-base`).
+You can download our models from HuggingFace. First, please visit the model repository of your preference, for example, `ibm-granite/granite-3b-code-base`. To download the model (i.e., `granite-3b-code-base`), click on *Files and versions* tab and download the content of the `main` branch. You can also download our models via the command line by installing `huggingface-hub` library, or by cloning the model's repository (i.e., `git clone git@hf.co:ibm-granite/granite-3b-code-base`).
 
 ## How to Use our Models?
 
