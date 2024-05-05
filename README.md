@@ -64,7 +64,9 @@ output = tokenizer.batch_decode(output)
 for i in output:
     print(output)
 ```
-    
+## How to Contribute to this Project?
+Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project.
+
 ## Model Cards
 The model cards for each model variant are available in their respective HuggingFace repository. Please visit our collection [here](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330).
     
