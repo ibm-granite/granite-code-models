@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-        :hugging_face: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330"> Models Download</a>&nbsp | :newspaper: <a href="http://"> Blog</a>&nbsp | :books: <a href="https://">Paper Link </a>&nbsp
+        :arrow_down: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330"> Models Download</a>&nbsp | :newspaper: <a href="http://"> Blog</a>&nbsp | :books: <a href="https://">Paper Link </a>&nbsp
 <br>
 
 ---
@@ -33,10 +33,10 @@ We trained most **Granite Code Base Models** from scratch following a two-phase 
 ## Instruction Tuning
 Granite Code Instruct models are finetuned on the following types of instruction data: 1) code commits sourced from [CommitPackFT](https://huggingface.co/datasets/bigcode/commitpackft), 2) high-quality math datasets, specifically we used [MathInstruct](https://huggingface.co/datasets/TIGER-Lab/MathInstruct) and [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA), 3) Code instruction datasets such as [Glaive-Code-Assistant-v3](https://huggingface.co/datasets/glaiveai/glaive-code-assistant-v3), [Glaive-Function-Calling-v2](https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2), [NL2SQL11](https://huggingface.co/datasets/bugdaryan/sql-create-context-instruction) and a small collection of synthetic API calling datasets, and 4) high-quality language instruction datasets such as [HelpSteer](https://huggingface.co/datasets/nvidia/HelpSteer) and an open license-filtered version of [Platypus](https://huggingface.co/datasets/garage-bAInd/Open-Platypus).
 
-## How to Download?
+## How to Download our Models?
 You can download our models from HuggingFace. First, please visit the model repository of your preference, for example, `ibm-granite/granite-3b-code-base`. To download the model (i.e., `granite-3b-code-base`), click on *Files and versions* tab and download the content of the `main` branch. You can also download our models via the command line by installing 'huggingface-hub` library. Another option is to clone a model's respective HuggingFace repository (i.e., `git clone git@hf.co:ibm-granite/granite-3b-code-base`).
 
-## How to use?
+## How to Use our Models?
 
 This is a simple example of how to use **Granite-Code-Base-3B model**.
 
@@ -87,4 +87,4 @@ The model cards for each model variant are available in their respective Hugging
 All Granite Code Models are distributed under [Apache 2.0](./LICENSE) license.
 
 ## Would you like to provide feedback?
-Please let use know your comments about our family of code models by visiting our :hugging_face: [collection](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330). Select the repository of the model you would like to provide feedback about. Then, go to *Community* tab, and click on *New discussion*.
+Please let use know your comments about our family of code models by visiting our [collection](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330). Select the repository of the model you would like to provide feedback about. Then, go to *Community* tab, and click on *New discussion*.
