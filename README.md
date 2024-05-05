@@ -25,7 +25,7 @@ We conduct an extensive evaluation of our code models on a comprehensive list of
 
 Our findings reveal that Granite Code models outperform strong open-source models across model sizes. To illustrate the performance of our. models, the figure below shows a comparison of `Granite-8B-Code-Base` and other open-source  LLMs, including recent high-performing general purpose base LLMs such as `Mistral-7B` and `LLama-3-8B`. For further information on evaluation results, please check our paper.
     
-<img src="./figures/figure1.png" />
+<img src="./figures/GraniteCodeFigure1.png" />
 
 ## Pretraining
 We trained most **Granite Code Base Models** from scratch following a two-phase training strategy. In phase 1, we train the **Code Base Models** of 3,8, and 20B parameters on 3 to 4 trillion tokens sourced from code data in 116 programming languages, which ensures the models have a comprehensive understanding of programming languages and syntax. **Granite-34B-Code-Base** model is trained using depth upscaling from **Granite-20B-Code-Base** model. This model, in particular, is trained on 3 trillion tokens (1.4 trillion tokens after depthup scaling). In phase 2, we trained our models on 500 billion tokens with a carefully designed mixture of high-quality data from code and natural language domains to improve the models’ ability to reason and follow instructions. 
