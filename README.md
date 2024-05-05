@@ -8,12 +8,16 @@
 
 ---
 ## Introduction to Granite Code Models
-The **Granite Code Models** are a series of highly capable LLMs designed for code-related tasks. All Granite Code Models are released under [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) and were built following transparent data collection and filtering practices. These two factors make these models ideal for enterprise commercial use. Moreover, without an impact on performance, our family of code-enterprise-ready models requires less computational resources than other open-source LLMs twice their size.
+We introduce the Granite series of decoder-only code models for code generative tasks (e.g., fixing bugs, explaining code, documenting code), trained with code written in 116 programming languages. A comprehensive evaluation of the Granite Code model family on diverse tasks demonstrates that our models consistently reach state-of-the-art performance among available open-source code LLMs.  
+
+The key advantages of Granite Code models include:
+* All-rounder Code LLM: Granite Code models achieve competitive or state-of-the-art performance on different kinds of code-related tasks, including code generation, explanation, fixing, editing, translation, and more. Demonstrating their ability to solve diverse coding tasks.
+* Trustworthy Enterprise-Grade LLM: All our models are trained on license-permissible data collected following IBM’s AI [Ethics principles](https://www.ibm.com/impact/ai-ethics) and guided by IBM’s Corporate Legal team for trustworthy enterprise usage. We release all our Granite Code models under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) license for research and commercial use.
 
 The family of **Granite Code Models** comes in two main variants:
 
-* Granite Code Base Models: Base foundational models designed for general code generative tasks (e.g., code repair, code explanation, code synthesis).
-* Granite Code Instruct Models: Instruction following models finetuned using Git commits paired with human instructions.
+* Granite Code Base Models: base foundational models designed for code-related tasks (e.g., code repair, code explanation, code synthesis).
+* Granite Code Instruct Models: instruction following models finetuned using a combination of Git commits paired with human instructions and open-source synthetically generated code instruction datasets.
 
 All variants are available in sizes of 3B, 8B, 20B, and 34B parameters.
 
