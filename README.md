@@ -96,4 +96,4 @@ The model cards for each model variant are available in their respective Hugging
 All Granite Code Models are distributed under [Apache 2.0](./LICENSE) license.
 
 ## Would you like to provide feedback?
-Please let use know your comments about our family of code models by visiting our [collection](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330). Select the repository of the model you would like to provide feedback about. Then, go to *Community* tab, and click on *New discussion*.
+Please let us know your comments about our family of code models by visiting our [collection](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330). Select the repository of the model you would like to provide feedback about. Then, go to *Community* tab, and click on *New discussion*.
