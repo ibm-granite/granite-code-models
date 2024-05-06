@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="figures/granite-code-models-banner_1x.png" />
+  <img src="figures/granite-code-models-banner_3x.png" />
 </p>
 
 <p align="center">
-        :arrow_down: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330"> Models Download</a>&nbsp | :newspaper: <a href="http://"> Blog</a>&nbsp | :books: <a href="https://">Paper Link </a>&nbsp
+        :arrow_down: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330"> Models Download</a>&nbsp
+        <!-- :newspaper: <a href="http://"> Blog</a>&nbsp -->
+        <!-- | :books: <a href="https://">Paper Link </a>&nbsp -->
 <br>
 
 ---
@@ -12,7 +14,7 @@ We introduce the Granite series of decoder-only code models for code generative 
 
 The key advantages of Granite Code models include:
 * All-rounder Code LLM: Granite Code models achieve competitive or state-of-the-art performance on different kinds of code-related tasks, including code generation, explanation, fixing, editing, translation, and more. Demonstrating their ability to solve diverse coding tasks.
-* Trustworthy Enterprise-Grade LLM: All our models are trained on license-permissible data collected following IBM’s AI [Ethics principles](https://www.ibm.com/impact/ai-ethics) and guided by IBM’s Corporate Legal team for trustworthy enterprise usage. We release all our Granite Code models under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) license for research and commercial use.
+* Trustworthy Enterprise-Grade LLM: All our models are trained on license-permissible data collected following [IBM's AI Ethics principles](https://www.ibm.com/impact/ai-ethics) and guided by IBM’s Corporate Legal team for trustworthy enterprise usage. We release all our Granite Code models under an [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) license for research and commercial use.
 
 The family of **Granite Code Models** comes in two main variants:
 
@@ -25,7 +27,7 @@ All variants are available in sizes of 3B, 8B, 20B, and 34B parameters.
 Our process to prepare code pretraining data involves several stages. First, we collect a combination of publicly available datasets (e.g., GitHub Code Clean, Starcoder data), public code repositories, and issues from GitHub. Second, we filter the code data collected based on the programming language in which data is written (which we determined based on file extension). Then, we also filter out data with low code quality. Third, we adopt an aggressive deduplication strategy that includes both exact and fuzzy deduplication to remove documents having (near) identical code content. Finally, we apply a HAP content filter that reduces models' likelihood of generating hateful, abusive, or profane language. We also make sure to redact Personally Identifiable Information (PII) by replacing PII content (e.g., names, email addresses, keys, passwords) with corresponding tokens (e.g., ⟨NAME⟩, ⟨EMAIL⟩, ⟨KEY⟩, ⟨PASSWORD⟩). We also scan all datasets using ClamAV to identify and remove instances of malware in the source code.
 
 ## Pretraining
-The **Granite Code Base** models are trained on 4.5T tokens of code data and natural language datasets related to code. Data is tokenized via byte pair encoding (BPE, (Sennrich et al., 2015)), employing the same tokenizer as StarCoder (Li et al., 2023a). Following (Shen et al., 2024; Hu et al., 2024), we utilize high-quality data with two phases of training as follows:
+The **Granite Code Base** models are trained on 4.5T tokens of code data and natural language datasets related to code. Data is tokenized via byte pair encoding (BPE), employing the same tokenizer as StarCoder. We utilize high-quality data with two phases of training as follows:
 
 * Phase 1 (code only training): During phase 1, 3B and 8B models are trained for 4 trillion tokens of code data comprising 116 languages. The 20B parameter model is trained on 3 trillion tokens of code. The 34B model is trained on 1.4T tokens after the depth upscaling which is done on the 1.6T checkpoint of 20B model.
 * Phase 2 (code + language training): In phase 2, we include additional high-quality publicly available data from various domains, including technical, mathematics, and web documents, to further improve the model’s performance. We train all our models for 500B tokens (80% code-20% language mixture) in phase 2 training.
@@ -45,52 +47,51 @@ You can download our models from HuggingFace. First, please visit the model repo
 
 ## How to Use our Models?
 
-This is a simple example of how to use **Granite-Code-Base-3B model**.
+To use any of our models, pick an appropriate `model_path` from:
+1. `ibm-granite/granite-3b-code-base`
+2. `ibm-granite/granite-3b-code-instruct`
+3. `ibm-granite/granite-8b-code-base`
+4. `ibm-granite/granite-8b-code-instruct`
+5. `ibm-granite/granite-20b-code-base`
+6. `ibm-granite/granite-20b-code-instruct`
+7. `ibm-granite/granite-34b-code-base`
+8. `ibm-granite/granite-34b-code-instruct`
 
 ```python
-import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
+
 device = "cuda" # or "cpu"
-model_path = "ibm-granite/granite-3b-code-base"
+model_path = "ibm-granite/granite-3b-code-base" # pick anyone from above list
+
 tokenizer = AutoTokenizer.from_pretrained(model_path)
+
 # drop device_map if running on CPU
 model = AutoModelForCausalLM.from_pretrained(model_path, device_map=device)
 model.eval()
+
 # change input text as desired
 input_text = "def generate():"
 # tokenize the text
 input_tokens = tokenizer(input_text, return_tensors="pt")
+
 # transfer tokenized inputs to the device
 for i in input_tokens:
     input_tokens[i] = input_tokens[i].to(device)
+
 # generate output tokens
 output = model.generate(**input_tokens)
 # decode output tokens into text
 output = tokenizer.batch_decode(output)
+
 # loop over the batch to print, in this example the batch size is 1
 for i in output:
-    print(output)
+    print(i)
 ```
 ## How to Contribute to this Project?
 Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project.
 
 ## Model Cards
 The model cards for each model variant are available in their respective HuggingFace repository. Please visit our collection [here](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330).
-    
-## Research Paper
-* Would you like to read our paper? Please click [here](https://www.overleaf.com/project/6520094b0a31c2dc6445597e).
-* Would you like to cite our paper? Please do it this way:
-    
-```
-@misc{granite-models,
-  author = {author 1, author2, ...},
-  title = {Granite Code Large Language Models: IBM Foundation Models for Code},
-  journal = {},
-  volume = {},
-  year = {2024},
-  url = {https://arxiv.org/abs/0000.00000},
-}
-```
 
 ## License 
 All Granite Code Models are distributed under [Apache 2.0](./LICENSE) license.
