@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  :newspaper: <a href="http://">Blog (coming soon)</a>&nbsp | :books: <a href="https://">Paper (coming soon)</a>&nbsp | :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330">HugginFace Collection</a>&nbsp | 
-  :speech_balloon: <a href="https://github.com/orgs/ibm-granite/discussions">Discussions Page</a>&nbsp
+  :books: <a href="./paper.pdf">Paper</a>&nbsp | :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330">HugginFace Collection</a>&nbsp | 
+  :speech_balloon: <a href="https://github.com/orgs/ibm-granite/discussions">Discussions Page</a>&nbsp | :newspaper: <a href="http://">Blog (coming soon)</a>&nbsp
 <br>
 
 ---
