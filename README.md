@@ -3,9 +3,7 @@
 </p>
 
 <p align="center">
-        :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330">HugginFace Collection</a>&nbsp
-        <!-- :newspaper: <a href="http://"> Blog</a>&nbsp -->
-        <!-- | :books: <a href="https://">Paper Link </a>&nbsp -->
+  :hugs: <a href="https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330">HugginFace Collection</a>&nbsp | :newspaper: <a href="http://">Blog</a>&nbsp | :books: <a href="https://">Paper Link</a>&nbsp
 <br>
 
 ---
