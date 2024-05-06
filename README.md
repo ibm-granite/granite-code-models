@@ -40,7 +40,7 @@ We conduct an extensive evaluation of our code models on a comprehensive list of
 
 Our findings reveal that Granite Code models outperform strong open-source models across model sizes. The figure below illustrates how `Granite-8B-Code-Base` outperforms `Mistral-7B`, `LLama-3-8B`, and other open-source models in three coding tasks. We provide further evaluation results in our paper.
     
-<img src="./figures/GraniteCodeFigure1.png" />
+<img src="./figures/GraniteCodeFigure1.jpg" />
 
 ## How to Download our Models?
 You can download our models from HuggingFace. First, please visit the model repository of your preference, for example, `ibm-granite/granite-3b-code-base`. To download the model (i.e., `granite-3b-code-base`), click on *Files and versions* tab and download the content of the `main` branch. You can also download our models via the command line by installing `huggingface-hub` library, or by cloning the model's repository (i.e., `git clone git@hf.co:ibm-granite/granite-3b-code-base`).
