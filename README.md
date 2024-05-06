@@ -53,6 +53,7 @@ To use any of our models, pick an appropriate `model_path` from:
 7. `ibm-granite/granite-34b-code-base`
 8. `ibm-granite/granite-34b-code-instruct`
 
+### Inference
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -83,6 +84,10 @@ output = tokenizer.batch_decode(output)
 for i in output:
     print(i)
 ```
+
+### Finetuning
+Codebase coming soon.
+
 <!-- ## How to Contribute to this Project?
 Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project. -->
 
