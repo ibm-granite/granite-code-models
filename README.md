@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="figures/granite-code-models-3x-v3.png" />
+  <img src="figures/granite-code-models-3x-v4.png" />
 </p>
 
 <p align="center">
