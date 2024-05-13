@@ -9,7 +9,7 @@
 
 ---
 ## Introduction to Granite Code Models
-We introduce the Granite series of decoder-only code models for code generative tasks (e.g., fixing bugs, explaining code, documenting code), trained with code written in 116 programming languages. A comprehensive evaluation of the Granite Code model family on diverse tasks demonstrates that our models consistently reach state-of-the-art performance among available open-source code LLMs.  
+We introduce the Granite series of decoder-only code models for code generative tasks (e.g., fixing bugs, explaining code, documenting code), trained with code written in 116 programming languages. A comprehensive evaluation of the Granite Code model family on diverse tasks demonstrates that our models consistently reach state-of-the-art performance among available open source code LLMs.  
 
 The key advantages of Granite Code models include:
 * All-rounder Code LLM: Granite Code models achieve competitive or state-of-the-art performance on different kinds of code-related tasks, including code generation, explanation, fixing, editing, translation, and more. Demonstrating their ability to solve diverse coding tasks.
@@ -18,7 +18,7 @@ The key advantages of Granite Code models include:
 The family of **Granite Code Models** comes in two main variants:
 
 * Granite Code Base Models: base foundational models designed for code-related tasks (e.g., code repair, code explanation, code synthesis).
-* Granite Code Instruct Models: instruction following models finetuned using a combination of Git commits paired with human instructions and open-source synthetically generated code instruction datasets.
+* Granite Code Instruct Models: instruction following models finetuned using a combination of Git commits paired with human instructions and open source synthetically generated code instruction datasets.
 
 Both base and instruct models are available in sizes of 3B, 8B, 20B, and 34B parameters.
 
@@ -37,7 +37,7 @@ Granite Code Instruct models are finetuned on the following types of instruction
 ## Evaluation Results
 We conduct an extensive evaluation of our code models on a comprehensive list of benchmarks that includes but is not limited to HumanEvalPack, MBPP, and MBPP+. This set of benchmarks encompasses different coding tasks across commonly used programming languages (e.g., Python, JavaScript, Java, Go, C++, Rust).
 
-Our findings reveal that Granite Code models outperform strong open-source models across model sizes. The figure below illustrates how `Granite-8B-Code-Base` outperforms `Mistral-7B`, `LLama-3-8B`, and other open-source models in three coding tasks. We provide further evaluation results in our paper.
+Our findings reveal that Granite Code models outperform strong open source models across model sizes. The figure below illustrates how `Granite-8B-Code-Base` outperforms `Mistral-7B`, `LLama-3-8B`, and other open source models in three coding tasks. We provide further evaluation results in our paper.
     
 <img src="./figures/GraniteCodeFigure1.jpg" />
 
