@@ -86,10 +86,23 @@ for i in output:
 ```
 
 ### Finetuning
-Codebase coming soon.
+We use [Dolomite Engine](https://github.com/ibm-granite/dolomite-engine/) for finetuning all our models. We provide sample scripts for finetuning `ibm-granite/granite-3b-code-base`. To finetune the models, simply follow these steps:
+```shell
+git clone https://github.com/ibm-granite/dolomite-engine/
+cd dolomite-engine
 
-<!-- ## How to Contribute to this Project?
-Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project. -->
+# you might need to modify configs/granite-example/training.yml
+sh scripts/finetune.sh configs/granite-example/training.yml
+
+# once the model is trained, convert to HuggingFace-compatible safetensors
+sh scripts/export.sh configs/granite-example/export.yml
+```
+
+### Advanced usage
+If you would like to use [padding-free transformers](https://huggingface.co/blog/mayank-mishra/padding-free-transformer) during training, follow the instructions in the [Dolomite Engine](https://github.com/ibm-granite/dolomite-engine?tab=readme-ov-file#huggingface-compatible-custom-models) repository.
+
+## How to Contribute to this Project?
+Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project.
 
 ## Model Cards
 The model cards for each model variant are available in their respective HuggingFace repository. Please visit our collection [here](https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330).
