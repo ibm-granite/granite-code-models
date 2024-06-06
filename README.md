@@ -86,7 +86,7 @@ for i in output:
 ```
 
 ### Finetuning
-We use [Dolomite Engine](https://github.com/ibm-granite/dolomite-engine/) for finetuning all our models. We provide sample scripts for finetuning `ibm-granite/granite-3b-code-base`. To finetune the models, simply follow these steps:
+We use [Dolomite Engine](https://github.com/ibm-granite/dolomite-engine/) for finetuning (or instruction tuning) all our models. We provide sample scripts for finetuning `ibm-granite/granite-3b-code-base`. To finetune the models, simply follow these steps:
 ```shell
 git clone https://github.com/ibm-granite/dolomite-engine/
 cd dolomite-engine
@@ -98,8 +98,8 @@ sh scripts/finetune.sh configs/granite-example/training.yml
 sh scripts/export.sh configs/granite-example/export.yml
 ```
 
-### Advanced usage
-If you would like to use [padding-free transformers](https://huggingface.co/blog/mayank-mishra/padding-free-transformer) during training, follow the instructions in the [Dolomite Engine](https://github.com/ibm-granite/dolomite-engine?tab=readme-ov-file#huggingface-compatible-custom-models) repository.
+> [!TIP]
+> If you would like to use [padding-free transformers](https://huggingface.co/blog/mayank-mishra/padding-free-transformer) to save memory footprint and FLOPs during training, follow the instructions in the [Dolomite Engine README](https://github.com/ibm-granite/dolomite-engine?tab=readme-ov-file#huggingface-compatible-custom-models) for more details.
 
 ## How to Contribute to this Project?
 Plese check our [Guidelines](/CONTRIBUTING.md) and [Code of Conduct](/CODE_OF_CONDUCT.md) to contribute to our project.
