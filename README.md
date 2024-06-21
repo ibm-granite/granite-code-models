@@ -37,8 +37,8 @@ Granite Code Instruct models are finetuned on the following types of instruction
 ## Evaluation Results
 We conduct an extensive evaluation of our code models on a comprehensive list of benchmarks that includes but is not limited to HumanEvalPack, MBPP, and MBPP+. This set of benchmarks encompasses different coding tasks across commonly used programming languages (e.g., Python, JavaScript, Java, Go, C++, Rust).
 
-Our findings reveal that Granite Code models outperform strong open source models across model sizes. The figure below illustrates how `Granite-8B-Code-Base` outperforms `Mistral-7B`, `LLama-3-8B`, and other open source models in three coding tasks. We provide further evaluation results in our paper.
-    
+Our findings reveal that Granite Code models outperform strong open source models across model sizes. The figure below illustrates how `Granite-8B-Code-Base` outperforms `Mistral-7B`, `LLama-3-8B`, and other open source models in three coding tasks. We provide further evaluation results in our [paper](https://arxiv.org/abs/2405.04324).
+
 <img src="./figures/GraniteCodeFigure1.jpg" />
 
 ## How to Use our Models?
