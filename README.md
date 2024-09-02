@@ -110,7 +110,7 @@ The model cards for each model variant are available in their respective Hugging
 ## How to Download our Models?
 The model of choice (granite-3b-code-base in this example) can be cloned using:
 ```shell
-git clone https://huggingface.co/ibm-granite/granite-3b-code-base
+git clone https://huggingface.co/ibm-granite/granite-3b-code-base-2k
 ```
 
 ## License 
