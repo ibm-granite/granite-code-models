@@ -44,21 +44,21 @@ Our findings reveal that Granite Code models outperform strong open source model
 ## How to Use our Models?
 
 To use any of our models, pick an appropriate `model_path` from:
-1. `ibm-granite/granite-3b-code-base`
-2. `ibm-granite/granite-3b-code-instruct`
-3. `ibm-granite/granite-8b-code-base`
-4. `ibm-granite/granite-8b-code-instruct`
-5. `ibm-granite/granite-20b-code-base`
-6. `ibm-granite/granite-20b-code-instruct`
-7. `ibm-granite/granite-34b-code-base`
-8. `ibm-granite/granite-34b-code-instruct`
+1. `ibm-granite/granite-3b-code-base-2k`
+2. `ibm-granite/granite-3b-code-instruct-2k`
+3. `ibm-granite/granite-8b-code-base-4k`
+4. `ibm-granite/granite-8b-code-instruct-4k`
+5. `ibm-granite/granite-20b-code-base-8k`
+6. `ibm-granite/granite-20b-code-instruct-8k`
+7. `ibm-granite/granite-34b-code-base-8k`
+8. `ibm-granite/granite-34b-code-instruct-8k`
 
 ### Inference
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 device = "cuda" # or "cpu"
-model_path = "ibm-granite/granite-3b-code-base" # pick anyone from above list
+model_path = "ibm-granite/granite-3b-code-base-2k" # pick anyone from above list
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
